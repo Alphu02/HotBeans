@@ -41,6 +41,7 @@ body {
 	  font-family: "Poppins";
 	  font-weight: 500;
 	  line-height: 21px;
+	  font-weight: bold;
 }
 .column{
 	width: 65%;
@@ -150,7 +151,7 @@ body {
 
 .text {
   color: #030303;
-  font-size: 10px;
+  font-size: 12px;
   font-family: "Poppins";
   line-height: 26px;
   text-align: center;
@@ -184,23 +185,17 @@ body {
 .imageblog {
   top: 527px;
   left: 533px;
-  width: 306px;
-  height: 306px;
+  width: 1000px;
+  height: 345px;
   border-radius: 2px;
   background-image: url(./image.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
   
 }
 
-.imagecontainer {
-   display: fixed;
-   flex-direction: column;
-   position: relative;
-   left: 40%;
-   
-}
 
 .input {
   top: 370px;
@@ -305,19 +300,19 @@ display:inline-block; /*so they display inline */
 .table1 {
     /* a table */
     display:table;
-    height:260px;
-    width:600px;
+    height:300px;
+    width:700px;
     border-collapse:collapse;
-	border-spacing: 30px;
-
-	
-
- 
+	border-spacing: 20px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .table1 > div {
     /* rows */
     background-color:blue;
     display:table-row;
+	
+	
 }
 .table1 > div > div {
     /* cells */
@@ -325,7 +320,8 @@ display:inline-block; /*so they display inline */
     display:table-cell;
     text-align:center;
     vertical-align:middle;
-    border:1px solid black;
+    border:12px solid white;
+	padding: 10px;
 	
 }
 .table1 .cell1 {
@@ -335,4 +331,33 @@ display:inline-block; /*so they display inline */
     background-color:#f2cfcd;
     border-radius: 2px;
 	padding: 30px;
+	font-size: 13px;
+	
+}
+
+
+.pcolumn {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+
+.imageteam {
+  top: 2928px;
+  left: 216px;
+  width: 220px;
+  height: 240px;
+  border-radius: 2px;
+  background-image: url(./image.jpeg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
