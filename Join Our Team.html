@@ -8,6 +8,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  
+  <!-- React -->
+	<script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+	<script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+ <!-- React --> 
+ 
   <link rel="stylesheet" href="Stylesheet/style.css">
   <style>
   
@@ -19,42 +26,41 @@
    
    } -->
    
-   
-   
-   
     #menu{
 		background-color:#f1f1f1;
 		
    }
    
-   
-   
    #websitecontent{
 	   background-color:white;
-	   height: 500px;
+	   height: 1200px;
+	   width: 100%;
 	   padding: 20px;
-	   border: 0.3px solid lightgray;
-   
+	   <!-- border: 3px solid green; -->
+	   margin-left:auto;
+	   margin-right:auto;
+	   
    }
    
-  
+ 
    
    #footer{
 	background-color:#f1f1f1;
 	margin: auto;
-	width: 70%;
-  <!-- border: 3px solid #73AD21; -->
+	text-align: center;
 	padding: 10px;
-    
+	width: auto;
+	height: 200px;
+    <!-- border: 2px solid blue; -->
    }
    
   .outer_container {
   margin: auto;
-  width: 70%;
-  <!-- border: 3px solid #73AD21; -->
   padding: 10px;
-  
   background-color:white;
+  
+  
+ <!--  border: 3px solid black; -->
 }
    
   </style>
@@ -77,7 +83,7 @@
       <ul class="nav navbar-nav navbar-right">
         <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
 				
-		<p><a class="normalbutton" href="">Apply</a></p>
+		<p style="padding: 10px;"><a class="normalbutton" href="">Apply</a></p>
       </ul>
     </div>
 	
@@ -85,39 +91,107 @@
 
 	<div id="websitecontent">  <!-- website area div start-->
 	
-	<div><h4 class="textheader">Join Our Team</h4></div>
+	<div ><p class="textheader">Join Our Team</p></div>
 	
+	<!-- buttons -->
+	<div style="margin-left: 370px";>
+	 
+	 <a class="brownbutton" href="">All Positions</a>
+	 <a class="brownbutton" href="">Engineering</a>
+	  <a class="brownbutton" href="">Design</a>
+	  <a class="brownbutton" href="">Management</a>
+	  <a class="brownbutton" href="">Fianance</a>
 	
+	 
+	</div>
+	<!-- buttons -->
 		
+<!-- Card -->		
+		
+<div class="table1">
+    <div>
+        <div class="cell1"><a href="Job Description.html"><img class="icon" src="Image/icon1.png"></a><br/><br/>Design Team<br/><strong>UI Designer </strong></div>
+        <div class="cell1"><a href="Job Description.html"><img class="icon" src="Image/icon2.png"></a><br/><br/>Platform Team<br/><strong>Project Manager </strong></div>
+		<div class="cell1"><a href="Job Description.html"><img class="icon" src="Image/icon3.png"></a><br/><br/>Design Team<br/><strong>Junior Designer</strong></div>
+		<div class="cell1"><a href="Job Description.html"><img class="icon" src="Image/icon4.png"></a><br/><br/>Operation Team<br/><strong>HR Manager</strong></div>
+        
+    </div>
+    <div>
+        
+		<div class="cell1"><a href="Job Description.html"><img class="icon" src="Image/icon5.png"></a><br/><br/>Finance Team<br/><strong>Data Analyst</strong></div>
+		<div class="cell1"><a href="Job Description.html"><img class="icon" src="Image/icon6.png"></a><br/><br/>Marketing Team<br/><strong>UX CopyWriter</strong></div>
+		<div class="cell1"><a href="Job Description.html"><img class="icon" src="Image/icon7.png"></a><br/><br/>Delivery Team<br/><strong>Fullstack Developer</strong></div>
+		<div class="cell1"><a href="Job Description.html"><img class="icon" src="Image/icon8.png"></a><br/><br/>Marketing Team<br/><strong>Content Writer</strong></div>
+         
+    </div>
 	
+</div>
+<!-- Card -->
+<br/>
+
+<div ><p class="textheader">Meet Our Team</p>
+<p class="text">We strive to create a global economy without borders, making our multi-currency wallet platform seamless to use.</p>
+
+</div>
+
+<!-- Teams photos-->
+
+<div class="row" style="margin-left: 100px";>
+  <div class="pcolumn">
+    <img src="Image/CEO.png" alt=""><br/>Jane Smith, CEO
+  </div>
+  <div class="pcolumn">
+    <img src="Image/Fullstack.png" alt="" ><br/>Mike Smeldy, Fullstack Developer
+  </div>
+  <div class="pcolumn">
+    <img src="Image/UIDesigner.png" alt="" ><br/> Yu Shun, UI Designer
+  </div>
+   <div class="pcolumn">
+    <img class="imageteam" src="Image/Analyst.png" alt=""><br/>Yusuf Khan, Data Analyst
+  </div>
+</div>
+
+<div class="row" style="margin-left: 100px";>
+  <div class="pcolumn">
+    <img src="Image/Writer.png" alt=""><br/>Merry Hooper, Content Writer
+  </div>
+  <div class="pcolumn">
+    <img src="Image/HRManager.png" alt="" ><br/>Paul Luke, HR Head
+  </div>
+  <div class="pcolumn">
+    <img src="Image/ProjectManager.png" alt="" ><br/>Henry Conner, Project Manager
+  </div>
+   <div class="pcolumn">
+    <img class="imageteam" src="Image/Developer.png" alt=""><br/>Michael Smith, Developer
+  </div>
+</div>
+
+
+<!-- Teams photos-->
 	
-	</div> <!-- website area div end-->
+</div> <!-- website area div end-->
 	
 	<div id="footer"> 
 	
 		<div class="textheader">Join Hot Bean Today</div>
-		</p>
 		
 		<input class="input" type="text" id="subscribe" name="subscribe" value="Enter yout email to subscribe"></p>
 		
 		
-		<div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
+	<div class="collapse navbar-collapse" id="myNavbar" style="margin-left: 200px;">
+		  <ul class="nav navbar-nav">
+			
+			 <li><a class="footertext" href="Our Vision.html">Discover Our Vision</a></li>
+			<li><a class="footertext" href="Join Our Team.html">Join our Team</a></li>
+			<li><a class="footertext" href="blog.html">Read Our Blog</a></li>
+			<li><a class="footertext" href="About Us.html">About Hot Beans</a></li>
+			<li><a class="footertext" href="Contact Us.html">Contact</a></li>
+			<li><a class="footertext" href="#">Privacy Policy</a></li>
+			<li><a class="footertext" href="#">Terms of Use</a></li>
 		
-        <li class="" ><a class="footertext" href="#">Discover Our Vision</a></li>
-		<li class="" ><a class="footertext" href="#">Join our Team</a></li>
-        <li><a class="footertext" href="#">Read Our Blog</a></li>
-        <li><a class="footertext" href="#">About Hot Beans</a></li>
-		<li><a class="footertext" href="Contact Us.html">Contact</a></li>
-		
-      </ul>
-	  </p>
-	  <ul class="nav navbar-nav">
-		
-		<li><a class="footertext" href="">Privacy Policy</a></li>
-		<li><a class="footertext" href="#">Terms of Use</a></li>
-      </ul>
-
+		 
+		 </ul>
+	 
     </div>
 		
 	
